@@ -1,0 +1,227 @@
+/************** Base Styles **************/
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e2320;
+  color: #e6e6e6;
+  line-height: 1.7;
+}
+
+/************** Navigation **************/
+nav {
+  background-color: #141a16;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 36px;
+  border-bottom: 1px solid #2f4a3a;
+}
+
+nav a {
+  color: #b7d1bf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #d8e6dd;
+}
+
+/************** Header / Splash **************/
+header {
+  text-align: center;
+  padding: 90px 25px 75px;
+  background-color: #232b26;
+}
+
+header h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3.1rem;
+  color: #d8e6dd;
+  margin-bottom: 20px;
+}
+
+header img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 4px solid #4f6f5a;
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: italic;
+  color: #b0b8b3;
+  margin-top: 8px;
+}
+
+.tagline {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #b7d1bf;
+  margin-top: 16px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************** Main Content **************/
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 50px;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
+/************** Section Headings **************/
+section h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #d8e6dd;
+  font-size: 1.7rem;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #2f4a3a;
+  padding-bottom: 10px;
+}
+
+/************** Definition Lists **************/
+section dl {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  row-gap: 18px;
+  column-gap: 40px;
+}
+
+section dt {
+  font-weight: 500;
+  color: #c7d6ce;
+}
+
+section dd {
+  margin: 0;
+  color: #e6e6e6;
+}
+
+/************** Lists & Links **************/
+section ul {
+  padding-left: 24px;
+}
+
+section li {
+  margin-bottom: 12px;
+}
+
+section a {
+  color: #9fc3ad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section a:hover {
+  color: #d8e6dd;
+}
+
+/************** Projects Section **************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+  justify-items: center;
+}
+
+.card {
+  background-color: #2a332e;
+  padding: 36px;
+  border-radius: 18px;
+  border: 1px solid #3f5f47;
+  width: 100%;
+  max-width: 380px;
+}
+
+.card h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #d8e6dd;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+/************** Contact Page **************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  margin: 0 auto;
+  gap: 26px;
+  padding: 44px;
+  background-color: #2a332e;
+  border-radius: 18px;
+  border: 1px solid #3f5f47;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #3f5f47;
+  font-family: inherit;
+  background-color: #1e2320;
+  color: #e6e6e6;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9fc3ad;
+}
+
+/************** Footer **************/
+footer {
+  background-color: #141a16;
+  color: #b0b8b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 0;
+  font-size: 0.85rem;
+  border-top: 1px solid #2f4a3a;
+}
+
+footer a {
+  color: #b7d1bf;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #d8e6dd;
+}
+
+/************** Responsive Design **************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+  }
+
+  main {
+    padding: 45px 28px;
+  }
+
+  section dl {
+    grid-template-columns: 1fr;
+  }
+}
